@@ -34,7 +34,7 @@ const Homepage = () => {
         <section className="flex flex-col gap-2 mt-10 xl:mt-12 justify-center items-center font-semibold text-white">
           <button
             onClick={() => {
-              navigate("/create");
+              navigate("/chat");
             }}
             className="block bg-indigo-700 py-2 w-48 sm:w-96 text-center rounded-md hover:bg-indigo-600 cursor-pointer"
           >
