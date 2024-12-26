@@ -18,11 +18,11 @@ const Theme = () => {
   };
 
   return (
-    <div className="absolute top-6 right-8 cursor-pointer ">
+    <div className="cursor-pointer">
       {theme === "dark" ? (
         <MdSunny
           onClick={handleThemeToggle}
-          className="text-3xl font-extrabold text-white"
+          className="text-3xl font-extrabold"
         />
       ) : (
         <IoIosMoon
