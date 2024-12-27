@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { WordRotate } from "../components/WordFlip";
 import Header from "../components/Header";
 import Underline from "../components/Underline";
+import Footer from "../components/Footer";
 
 const Homepage = () => {
   const navigate = useNavigate();
@@ -9,7 +10,7 @@ const Homepage = () => {
   return (
     <div className="h-screen flex flex-col dark:text-neutral-100 text-neutral-800">
       <Header />
-      <main className="flex flex-1 justify-center items-center flex-col bg-gradient-to-t from-violet-200 dark:from-neutral-950 dark:to-neutral-900">
+      <main className="flex flex-1 justify-center items-center flex-col bg-gradient-to-t from-violet-200 dark:from-neutral-950 dark:to-neutral-900 py-28">
         <title className="font-extrabold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bricolage-grotesque flex flex-col sm:flex-row sm:gap-4 justify-center items-center text-indigo-900 dark:text-indigo-400">
           <h1>Experience</h1>
           <WordRotate
@@ -50,6 +51,7 @@ const Homepage = () => {
           </button>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };

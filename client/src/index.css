@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -11,11 +11,11 @@
 }
 
 .font-bricolage-grotesque {
-  font-family: 'Bricolage Grotesque', serif;
+  font-family: "Bricolage Grotesque", serif;
 }
 
-.font-courier{
-  font-family: 'Courier New', monospace;
+.font-courier {
+  font-family: "Courier New", monospace;
 }
 
 @layer utilities {
@@ -28,4 +28,14 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+}
+
+:root:-webkit-scrollbar {
+  /* Chrome, Safari and Opera */
+  display: none;
+}
+
+:root {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
