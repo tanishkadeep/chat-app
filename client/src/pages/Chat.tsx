@@ -95,7 +95,7 @@ const Chat = () => {
     <div>
       <div className="h-screen flex flex-col">
         <Header />
-        <main className="flex flex-1 justify-center items-center flex-col dark:bg-neutral-900 dark:text-neutral-100 text-neutral-800 max-h-[calc(100vh-4rem)] pt-20 pb-28">
+        <main className="flex flex-1 justify-center items-center flex-col dark:bg-neutral-900 dark:text-neutral-100 text-neutral-800 max-h-[calc(100vh-4rem)] py-28">
           <div className="flex justify-between items-center w-3/4 md:w-2/3 px-4 mb-4 font-bold sm:text-lg sm:flex-row flex-col gap-4">
             <button
               onClick={() => {
@@ -125,7 +125,7 @@ const Chat = () => {
               </div>
             </div>
           </div>
-          <section className="bg-neutral-100 dark:bg-neutral-800/40 w-3/4 md:w-2/3 h-3/4 rounded-xl border dark:border-neutral-700 shadow-md relative flex flex-col">
+          <section className="bg-neutral-100 dark:bg-neutral-800/40 w-3/4 md:w-2/3 h-full rounded-xl border dark:border-neutral-700 shadow-md relative flex flex-col">
             <div className="overflow-y-scroll flex-1 sm:pl-12 sm:pr-6 pl-6 pr-4 py-4 flex flex-col items-end no-scrollbar">
               {messages.length === 0 && (
                 <div className="text-neutral-600 dark:text-neutral-300 text-sm sm:text-base font-semibold h-full flex items-center justify-center self-center">
