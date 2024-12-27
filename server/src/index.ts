@@ -1,15 +1,17 @@
 import { WebSocketServer, WebSocket } from "ws";
 import express from "express";
 import cors from "cors";
+import http from "http";
 
 const app = express();
 app.use(cors());
 
+const server = http.createServer(app);
+const ws = new WebSocketServer({ server });
+
 app.get("/ping", (req, res) => {
   res.status(200).send("Server is alive");
 });
-
-const ws = new WebSocketServer({ port: 8080 });
 
 interface User {
   socket: WebSocket;
@@ -71,6 +73,6 @@ ws.on("connection", function connection(socket: WebSocket) {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
